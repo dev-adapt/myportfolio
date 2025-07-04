@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
 
 :root{
-    --clr-black: #000;
+    --clr-black: rgb(2, 16, 39);
     --clr-white: hwb(0 100% 0%);
     --clr-orange: #eb2459;
     --clr-light-gray: #E7E7E7;
-    --clr-blue: #4e45d5;
+    --clr-blue: #11368c;
     --clr-dark-blue: #343d68;
 }
 
@@ -22,6 +22,7 @@ html{
 
 body{
     background-color: #e0c1cd;
+    color: var(--clr-black);
     font-size: 1.6rem;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
@@ -903,3 +904,99 @@ footer{
     opacity: 0.4;
   }
 }
+
+
+ .showcase-section {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #eddfe4;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+             
+           
+        }
+        
+
+        .showcase-section h2 {
+            font-size: 3rem;
+            color: #d63384;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .profile-links a img {
+            width: 320px;
+            height: 220px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-links a img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .certifications {
+            margin-top: 20px;
+        }
+
+        .certifications h3 {
+            font-size: 3rem;
+            color: #d63384;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .certifications-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .certification-card {
+            background: #f4ebec;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        .certification-card h4 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: #d63384;
+        }
+
+        .certification-card p {
+            font-size: 1.3rem;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .profile-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .profile-links a img {
+                width: 500px;
+                height: 300px;
+            }
+        }
