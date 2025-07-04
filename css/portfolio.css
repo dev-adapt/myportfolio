@@ -3,7 +3,7 @@
 :root{
     --clr-black: rgb(2, 16, 39);
     --clr-white: hwb(0 100% 0%);
-    --clr-orange: #eb2459;
+    --clr-orange: #ec245d;
     --clr-light-gray: #E7E7E7;
     --clr-blue: #11368c;
     --clr-dark-blue: #343d68;
@@ -78,6 +78,7 @@ section > h2{
 
 .btn:hover {
     color: var(--clr-black);
+    background-color: rgb(229, 196, 207);
 }
 
 .btn:hover::before{
